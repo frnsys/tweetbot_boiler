@@ -9,7 +9,7 @@ $ cd tweetbot_boiler
 $ pip install requirements.txt
 $ cp config-sample.py config.py
 
-# Fill in your Twitter API info config.py
+# Fill in your Twitter API info into config.py
 # Visit https://apps.twitter.com/ to get it if you don't have it.
 
 $ python examples.py tweets
