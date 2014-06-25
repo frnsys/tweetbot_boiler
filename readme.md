@@ -4,8 +4,8 @@ A very simple Twitter bot starting point.
 
 To access it:
 ```bash
-$ git clone <this repo>
-$ cd twitbot_boiler
+$ git clone https://github.com/ftzeng/tweetbot_boiler.git
+$ cd tweetbot_boiler
 $ pip install requirements.txt
 $ cp config-sample.py config.py
 
