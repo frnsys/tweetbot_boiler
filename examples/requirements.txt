@@ -1,0 +1,8 @@
+argparse==1.2.1
+giphypop==0.2
+python-dateutil==2.2
+requests==2.3.0
+six==1.7.3
+tweepy==2.3.0
+weatherpy==1.0.2
+wsgiref==0.1.2

@@ -1,7 +1,11 @@
+from collections import namedtuple
+
 import tweepy
 from tweepy import TweepError
 
 import config
+
+Tweet = namedtuple('Tweet', ['id', 'text'])
 
 def _api():
     """
@@ -17,16 +21,12 @@ def _api():
 
 api = _api()
 
-def tweets(username, count=200):
+def user_tweets(username, count=200):
     """
     Returns 200 last tweets for a user.
     """
-    return [{
-                'body': tweet.text,
-                'tid': tweet.id,
-                'protected': tweet.user.protected,
-                'retweeted': tweet.retweeted
-            } for tweet in api.user_timeline(screen_name=username, count=count)]
+    return [Tweet(tweet.id, tweet.text)
+            for tweet in api.user_timeline(screen_name=username, count=count)]
 
 def retweet(id):
     """
