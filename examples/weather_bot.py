@@ -11,9 +11,9 @@ import time
 import twitkit
 import weatherpy
 
-class WallyBot():
+class WallyBot(twitkit.TwitterBot):
     def __init__(self):
-        self.run()
+        pass
 
     def run(self):
         self.think()

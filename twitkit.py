@@ -7,6 +7,10 @@ import config
 
 Tweet = namedtuple('Tweet', ['id', 'text'])
 
+class TwitterBot():
+    def run(self):
+        raise NotImplementedError
+
 def _api():
     """
     Load auth info from config.

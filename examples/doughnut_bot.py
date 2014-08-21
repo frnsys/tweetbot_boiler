@@ -14,7 +14,7 @@ from giphypop import Giphy
 
 g = Giphy()
 
-class DoughnutBot():
+class DoughnutBot(twitkit.TwitterBot):
     def __init__(self, username):
         """
         Only interact with a specific
@@ -22,7 +22,6 @@ class DoughnutBot():
         """
         self.username = username
         self.seen_tweet_ids = []
-        self.run()
 
     def run(self):
         self.think()
